@@ -1,0 +1,6 @@
+$ mkdir -p "/home/cyan/Desktop/makeos/rCore-Tutorial-v3/os/target/riscv64gc-unknown-none-elf/release/build/az-898f20c96b756a73/out/try_track_caller"
+$ cd "/home/cyan/Desktop/makeos/rCore-Tutorial-v3/os/target/riscv64gc-unknown-none-elf/release/build/az-898f20c96b756a73/out/try_track_caller"
+$ printf '%s' "// try_tra"... > "/home/cyan/Desktop/makeos/rCore-Tutorial-v3/os/target/riscv64gc-unknown-none-elf/release/build/az-898f20c96b756a73/out/try_track_caller/try_track_caller.rs"
+$ "rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
+cargo:rustc-cfg=track_caller
+$ rm -r "/home/cyan/Desktop/makeos/rCore-Tutorial-v3/os/target/riscv64gc-unknown-none-elf/release/build/az-898f20c96b756a73/out/try_track_caller"
